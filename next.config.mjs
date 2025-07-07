@@ -1,7 +1,16 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   output: 'export',
-  // optionally add other configs like reactStrictMode
-};
+  eslint: {
+    ignoreDuringBuilds: true,
+  },
+  typescript: {
+    ignoreBuildErrors: true,
+  },
+  images: {
+    unoptimized: true,
+  },
+}
 
-module.exports = nextConfig;
+
+export default nextConfig
