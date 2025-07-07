@@ -1,4 +1,5 @@
-/** @type {import('next').NextConfig} */
+// next.config.mjs
+
 const nextConfig = {
   output: 'export',
   eslint: {
@@ -10,7 +11,6 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
-}
+};
 
-
-export default nextConfig
+export default nextConfig;
